@@ -1,5 +1,4 @@
-from unicodedata import name
-import discord
+import discord, os
 from discord.commands import Option
 from discord.ext import commands
 
@@ -33,4 +32,4 @@ async def result(ctx, user: Option(discord.Member, name="유저", description="�
 
 
 
-bot.run("MTAyNDYzNzQzMDM4NjY1NTI2Mg.GqqF7Q.gmRsdvpeaW9A0zIJwb5wj0EIdX9EChyIHA2xxI")
+bot.run(os.getenv(TOKEN))
