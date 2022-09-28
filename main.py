@@ -32,4 +32,4 @@ async def result(ctx, user: Option(discord.Member, name="유저", description="�
 
 
 
-bot.run(os.getenv(TOKEN))
+bot.run(os.getenv("TOKEN"))
